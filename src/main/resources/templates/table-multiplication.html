@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlsn:th="http://www.thymeleaf.org">
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Table de multiplication</h1>
+<table>
+	<tr th:each="ligne : ${table}">
+		<td th:text="${ligne}">  </td>
+	</tr>
+</table>	
+</body>
+</html>

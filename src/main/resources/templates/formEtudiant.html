@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlsn:th="http://www.thymeleaf.org">
+<head>
+	<title></title>
+</head>
+<body>
+	<h1  align="center">Formulaire d'inscription</h1>
+	<form th:action="@{/form-result-etudiant}" method="post">
+		<table  align="center">
+			<tr>
+				<td>Prénom</td>
+				<td> </td>
+				<td><input type="text" name="prenom" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Nom</td>
+				<td> </td>
+				<td><input type="text" name="nom" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Date de naissance</td>
+				<td> </td>
+				<td><input type="date" name="dateNaissance" style="width : 155px"></td>
+			</tr>
+			<tr>
+				<td>Lieu de naissance</td>
+				<td> </td>
+				<td><input type="text" name="lieuNaissance" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Adresse</td>
+				<td> </td>
+				<td><input type="text" name="adresse" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Sexe</td>
+				<td> </td>
+				<td>
+					<select name="sexe" style="width : 155px">
+						<option>--choix--</option>
+						<option>Masculin</option>
+						<option>Feminin</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Nationalité</td>
+				<td> </td>
+				<td><input type="text" name="nationalite" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Numéro de telephone</td>
+				<td> </td>
+				<td><input type="text" name="telephone" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Adresse Email</td>
+				<td> </td>
+				<td><input type="email" name="email" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Filière</td>
+				<td> </td>
+				<td>
+					<select name="filiere" style="width : 155px">
+						<option>--choix--</option>
+						<option>Génie Logiciel</option>
+						<option>Réseaux & Telecom</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Niveau</td>
+				<td> </td>
+				<td>
+					<select name="niveau" style="width : 155px">
+						<option>--choix--</option>
+						<option>Licence 1</option>
+						<option>Licence 2</option>
+						<option>Licence 3</option>
+						<option>Master 1</option>
+						<option>Master 2</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td><input type="submit" value="Envoyer"></td>
+				
+			</tr>
+		</table>
+		<p><a th:href="@{/}">Retour</a></p>
+	</form>
+</body>
+</html>

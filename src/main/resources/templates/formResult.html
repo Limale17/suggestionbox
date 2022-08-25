@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlsn:th="http://www.thymeleaf.org">
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Les informations de l'étudiant</h1>
+<table>
+	<tr>
+		<td>Prenom</td>
+		<td>  </td>
+		<td th:text="${prenom}"></td>
+	</tr>
+	<tr>
+		<td>Nom</td>
+		<td>  </td>
+		<td th:text="${nom}"></td>
+	</tr>
+	<tr>
+		<td>Date de naissance</td>
+		<td>  </td>
+		<td th:text="${dateNaissance}"></td>
+	</tr>
+	<tr>
+		<td>Lieu de naissance</td>
+		<td>  </td>
+		<td th:text="${lieuNaissance}"></td>
+	</tr>
+	<tr>
+		<td>Sexe</td>
+		<td>  </td>
+		<td th:text="${sexe}"></td>
+	</tr>
+	<tr>
+		<td>Nationalité</td>
+		<td>  </td>
+		<td th:text="${nationalite}"></td>
+	</tr>
+	<tr>
+		<td>Adresse</td>
+		<td>  </td>
+		<td th:text="${adresse}"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>  </td>
+		<td th:text="${email}"></td>
+		<tr>
+		<td>Filière</td>
+		<td>  </td>
+		<td th:text="${filiere}"></td>
+	</tr>
+	<tr>
+		<td>Niveau</td>
+		<td>  </td>
+		<td th:text="${niveau}"></td>
+	</tr>
+</table>	
+</body>
+</html>

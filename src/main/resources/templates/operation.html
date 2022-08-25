@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlsn:th="http://www.thymeleaf.org">
+<head>
+	<title></title>
+</head>
+<body>
+	<h1  align="center">Calculatrice</h1>
+	<form th:action="@{/operation-result}" method="post">
+		<table  align="center">
+			<tr>
+				<td>Nombre 1</td>
+				
+				<td><input type="number" name="nombre1" style="width : 150px"></td>
+			</tr>
+			<tr>
+				<td>Nombre 2</td>
+				
+				<td><input type="number" name="nombre2" style="width : 150px"></td>
+			</tr>
+			
+			<tr>
+				<td>Opération</td>
+				
+				<td>
+					<select name="operationType" style="width : 155px">
+						<option>--choix--</option>
+						<option value="Addition">Addition</option>
+						<option>Soustraction</option>
+						<option>Division</option>
+						<option>Multiplication</option>
+						<option>Modulo</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td><input type="submit" value="Envoyer"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
